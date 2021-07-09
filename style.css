@@ -1,0 +1,93 @@
+/* ************************** */
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&family=Yomogi&display=swap");
+/* ************************** */
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Root - Variables */
+:root {
+  --primary-heading-font-family: "Yomogi", cursive;
+  --primary-heading-font-size: 2rem;
+  --joke-font-family: "Sacramento", cursive;
+  --joke-font-size: 2.2rem;
+  --body-color: #00ead3;
+  --joke-box-color: #ff449f;
+  --button-color: #fff5b7;
+}
+/* Main Container - Body */
+body {
+  background-color: var(--body-color);
+  height: 100vh;
+}
+
+/* joke Box */
+.container {
+  height: max-content;
+  width: 60%;
+  padding: 0px 15px;
+  background-color: var(--joke-box-color);
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+#item-1 {
+  font-family: var(--primary-heading-font-family);
+  font-size: var(--primary-heading-font-size);
+  margin: 20px 0px;
+}
+#item-2 {
+  font-family: var(--joke-font-family);
+  font-size: var(--joke-font-size);
+  margin: 10px 0px;
+}
+#item-3 .btn {
+  padding: 10px;
+  font-family: var(--primary-heading-font-family);
+  border-radius: 8px;
+  border: none;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+  background-color: var(--button-color);
+  cursor: pointer;
+  margin: 20px 0px;
+}
+#item-3 .btn:hover {
+  background-color: #faeea1;
+  transition: all 0.3s ease-in-out 0s;
+}
+/* Utility Classes */
+.d-flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+/* Media Queries */
+@media screen and (max-device-width: 600px) {
+  .container {
+    height: max-content;
+    width: 80%;
+  }
+
+  #item-1 {
+    text-align: center;
+  }
+}
